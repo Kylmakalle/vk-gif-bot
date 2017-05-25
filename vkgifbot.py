@@ -5,7 +5,7 @@ import telebot
 from telebot import types
 
 token = os.environ['TELEGRAM_TOKEN']
-bot = telebot.TeleBot('350195599:AAEJ-5wyPdVVGMd45eps91nFavtoey3Bla0')
+bot = telebot.TeleBot(token)
 session = vk.Session()
 api = vk.API(session)
 
