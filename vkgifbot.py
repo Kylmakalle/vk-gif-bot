@@ -22,7 +22,6 @@ def query_text(inline_query):
                 for attach in wallpost[0]['attachments']:
                     if 'doc' in attach:
                         if attach['doc']['ext'] == 'gif' or '.gif' in attach['doc']['title']:
-                            print(attach)
                             gifs.append(types.InlineQueryResultGif(gif_url=attach['doc']['url'] + '&mp4=1',
                                                                    thumb_url=attach['doc']['thumb_s'],
                                                                    id=str(result)))
