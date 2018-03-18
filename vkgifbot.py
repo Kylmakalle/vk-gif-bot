@@ -7,7 +7,7 @@ from telebot import types
 token = os.environ['TELEGRAM_TOKEN']
 bot = telebot.TeleBot(token)
 session = vk.Session()
-api = vk.API(session)
+api = vk.API(session, v='3.0')
 
 
 @bot.inline_handler(lambda query: 'vk.com' in query.query)
